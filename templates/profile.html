@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+{% block content %}
+    <form action="" method="post">
+        {% csrf_token %}
+        <h3>Profile</h3>
+
+        <label for="Age">Age</label>
+        <input type="text" placeholder="Age" name="Age" id="Age"><br>
+
+        <label for="Gender">Gender</label>
+        <input type="text" placeholder="Gender" name="Gender" id="Gender"><br>
+
+        <label for="Mob.No">Mob.No.</label>
+        <input type="text" placeholder="Mob.No." id="Mob.No." name="Mob.No."><br>
+
+
+        <button type="submit">Submit/Update</button>
+
+
+
+    </form>
+{% endblock %}
